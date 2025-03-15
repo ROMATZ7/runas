@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>runas</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🔒 Prisión de Runas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔒 Prisión de Runas</h1>
+  <p><strong>Objetivo:</strong> Descubre la combinación secreta de <strong>6 runas mágicas</strong> antes de agotar tus <strong>25 intentos</strong>.</p>
+
+  <div id="instrucciones" style="max-width: 700px; margin: 0 auto 20px; font-size: 1rem; background-color: #1a1a1a; padding: 15px; border-radius: 10px; border: 1px solid #444;">
+    <h2 style="color: #ffc700;">🧾 ¿Cómo jugar?</h2>
+    <ul style="text-align: left; padding-left: 20px;">
+      <li>Haz clic en las runas para formar una combinación de 6 símbolos.</li>
+      <li>Presiona <strong>🔮 Intentar combinación</strong> para validar tu intento.</li>
+      <li>Recibirás pistas: <strong>✅ exactos</strong> (posición correcta) y <strong>🔁 mal ubicados</strong> (runa correcta pero en lugar incorrecto).</li>
+      <li>Puedes usar <strong>🧹 Borrar selección</strong> para reiniciar tu intento actual.</li>
+      <li>¡Adivina todas las runas en orden antes de llegar al intento #25!</li>
+    </ul>
+  </div>
+
+  <button id="empezar" onclick="iniciarJuego()" style="margin: 20px auto; display: block; padding: 12px 30px; font-size: 1.2rem; background-color: #ffc700; color: #111; border: none; border-radius: 10px; cursor: pointer;">
+    🎲 Empezar juego
+  </button>
+
+  <div id="juego" style="display: none;">
+    <div id="runas-opciones"></div>
+    <div id="combinacion-actual"></div>
+    <button id="borrar" onclick="borrarSeleccion()">🧹 Borrar selección</button>
+    <button id="enviar" onclick="verificarIntento()">🔮 Intentar combinación</button>
+    <div id="intentos">Intentos: 0 / 25</div>
+    <div id="pistas"></div>
+    <div id="resultado"></div>
+    <h2>📜 Historial de combinaciones</h2>
+    <div id="historial"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
