@@ -101,7 +101,7 @@ function verificarIntento() {
   }
 
   if (exactos === RUNAS_OBJETIVO) {
-    document.body.innerHTML = `<div id="estrellaVictoria">⭐</div>`;
+    document.body.innerHTML = `<div id="estrellaVictoria">⭐enseñar a rosalia</div>`;
     return;
   } else if (intentosUsados >= maxIntentos) {
     resultadoDiv.innerHTML = "💀 La prisión te atrapó para siempre...<br>La combinación era:<br>" + combinacionSecreta.join(" ");
